@@ -54,5 +54,10 @@ namespace sRsW_1
         {
             Dispose();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+        }
     }
 }

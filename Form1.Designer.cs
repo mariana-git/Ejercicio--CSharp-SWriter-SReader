@@ -35,6 +35,7 @@ namespace sRsW_1
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLeer
@@ -44,7 +45,7 @@ namespace sRsW_1
             this.btnLeer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLeer.Location = new System.Drawing.Point(34, 117);
             this.btnLeer.Name = "btnLeer";
-            this.btnLeer.Size = new System.Drawing.Size(187, 40);
+            this.btnLeer.Size = new System.Drawing.Size(130, 40);
             this.btnLeer.TabIndex = 0;
             this.btnLeer.Text = "Leer Chistes";
             this.btnLeer.UseVisualStyleBackColor = false;
@@ -55,9 +56,9 @@ namespace sRsW_1
             this.btnEscribir.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnEscribir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEscribir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEscribir.Location = new System.Drawing.Point(34, 437);
+            this.btnEscribir.Location = new System.Drawing.Point(240, 117);
             this.btnEscribir.Name = "btnEscribir";
-            this.btnEscribir.Size = new System.Drawing.Size(187, 40);
+            this.btnEscribir.Size = new System.Drawing.Size(142, 40);
             this.btnEscribir.TabIndex = 1;
             this.btnEscribir.Text = "Grabar Chiste";
             this.btnEscribir.UseVisualStyleBackColor = false;
@@ -87,9 +88,9 @@ namespace sRsW_1
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregar.Location = new System.Drawing.Point(438, 117);
+            this.btnAgregar.Location = new System.Drawing.Point(464, 117);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(187, 40);
+            this.btnAgregar.Size = new System.Drawing.Size(161, 40);
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar Chistes";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -98,15 +99,28 @@ namespace sRsW_1
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(438, 437);
+            this.btnSalir.Location = new System.Drawing.Point(564, 437);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(187, 40);
+            this.btnSalir.Size = new System.Drawing.Size(61, 32);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLimpiar.Location = new System.Drawing.Point(34, 437);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(82, 32);
+            this.btnLimpiar.TabIndex = 7;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
@@ -114,6 +128,7 @@ namespace sRsW_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(664, 489);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label1);
@@ -135,6 +150,7 @@ namespace sRsW_1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
